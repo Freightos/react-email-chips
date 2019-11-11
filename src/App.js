@@ -20,8 +20,9 @@ function App() {
 				title="Send notifications to:"
 				limit="3"
 				limitMessage="You’ve hit the maximum number of emails"
+				readonly={true}
 			></Chips>
-		</div>
+		</div >
 	);
 }
 

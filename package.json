@@ -1,6 +1,6 @@
 {
   "name": "@freightos/react-email-chips",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "repository": "osadan/react-email-chips",
   "dependencies": {
     "classnames": "^2.2.6",

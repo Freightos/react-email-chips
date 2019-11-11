@@ -10,14 +10,14 @@ class ChipsList extends Component {
 		return (
 			<Fragment>
 				{this.props.chips.map(chip => (
-					<span className={classNames({ chip: true, 'not-valid': !chip.valid })} key={chip.key}>
+					<span className={classNames({ chip: true, 'not-valid': !chip.valid, 'readonly': this.props.readonly })} key={chip.key}>
 						<span className="chip-value">{chip.email}</span>
 						<button
 							type="button"
 							className="chip-delete-button"
-							onClick={e => this.props.onChipClick(e, chip)}
+							onClick={e => !this.props.readonly && this.props.onChipClick(e, chip)}
 						>
-							<span>x</span>
+							{!this.props.readonly && <span>x</span>}
 						</button>
 					</span>
 				))}
