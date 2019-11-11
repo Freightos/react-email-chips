@@ -103,6 +103,11 @@ $font-size: 12px;
 			color: #ff586c;
 		}
 	}
+	&.readonly{
+		button {
+			right:-20px;
+		}
+	}
 
 	.chip-value {
 		display: inline-block;
