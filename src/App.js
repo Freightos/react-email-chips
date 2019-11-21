@@ -18,9 +18,9 @@ function App() {
 				required={true}
 				requiredMessage="* At least one valid email is required"
 				title="Send notifications to:"
-				limit="3"
+				limit="10"
 				limitMessage="You’ve hit the maximum number of emails"
-				readonly={true}
+				readonly={false}
 			></Chips>
 		</div >
 	);

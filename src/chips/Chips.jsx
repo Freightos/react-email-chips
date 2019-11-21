@@ -37,7 +37,7 @@ class Chips extends Component {
 	}
 
 	setChips(chips, save) {
-		if (chips && chips.length) {
+		if (chips) {
 			const validChips = this.getValidChips(chips);
 			const disableInput = this.props.limit && this.props.limit <= validChips.length;
 
